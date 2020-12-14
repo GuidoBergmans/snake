@@ -1,0 +1,261 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="bjU}y;!tE5v%Bc9^4c*5">Player</variable><variable type="KIND_SpriteKind" id="MY}Zl#0mBSY,2Jt;-_{n">Projectile</variable><variable type="KIND_SpriteKind" id="WhC#3DD2LX1YRmM0-!Cf">Food</variable><variable type="KIND_SpriteKind" id="XhBGdBqa6(o8s19jxo@g">Enemy</variable><variable type="KIND_SpriteKind" id="yOtdD]ni9AC^Q%K#XY8(">wall</variable><variable id="aUUtsY/`.C|^@V[i25HC">apple</variable><variable id="$R+IZhywA=zKKl{:sREK">snake</variable><variable id="kuQqGOicq$MWrB=;ZxgA">walls</variable><variable id="/+?%rae-y`b)0YbRG@U[">velocity</variable><variable id="aCIk(7OFc/ytDrHmzGc1">current_direction</variable><variable id="[7I^ndiASQsnUd%4^}1U">top</variable><variable id="^D;J2@d=EV2XD[?Sn^2q">up</variable><variable id="#wqK1Ynm%IdNII;F/hpw">right</variable><variable id="ThC!6JUX7nzWu9~H_%?y">down</variable><variable id="5tzhxx{5,;=7EbG`1b@f">left</variable></variables><block type="pxt-on-start" id="+Lm44o$@~O)30HcL!S$P" x="170" y="-330"><statement name="HANDLER"><block type="variables_set" id="sL698|Fyg`r%naCbMPVc"><field name="VAR" id="kuQqGOicq$MWrB=;ZxgA">walls</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Lk7i3Kxt:+5R?jwPZzW,"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="background_image_picker" id="]P_d-KT0Pi4clt?`l-r2"><field name="img">img`
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3..............................................................................................................................................................3
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+`</field></block></value><value name="kind"><shadow type="spritekind" id="BxB.]MM)%vsu5|H$-vCG"><field name="MEMBER">wall</field></shadow></value></block></value><next><block type="variables_set" id="J[B/`s/3uU#u-ul?1;@D"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="]:drQQ5]6$|DMC5en)2!"><value name="img"><shadow type="screen_image_picker" id="D?tkoO|N_|J!I2pQY2):"><field name="img">img`
+. . . 2 2 . . . 
+. . 2 2 2 2 . . 
+. 2 2 2 2 2 2 . 
+2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 
+. 2 2 2 2 2 2 . 
+. . 2 2 2 2 . . 
+. . . 2 2 . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="x+V.hU@IXRow+|H3vF9="><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="Gy77c|wgAXA`akZstYd@"><field name="VAR" id="/+?%rae-y`b)0YbRG@U[">velocity</field><value name="VALUE"><shadow type="math_number" id="HVeAw:y0tL=@/4}rcnAd"><field name="NUM">50</field></shadow></value><next><block type="variables_set" id="JiGG|$)pNkPHiaQpcpf|"><field name="VAR" id="^D;J2@d=EV2XD[?Sn^2q">up</field><value name="VALUE"><shadow type="math_number" id="vB;vnicWI8LmE-s8Drrm"><field name="NUM">-1</field></shadow></value><next><block type="variables_set" id="Os`S^@aJe{Ih?%K^OJhp"><field name="VAR" id="ThC!6JUX7nzWu9~H_%?y">down</field><value name="VALUE"><shadow type="math_number" id="Y3TvMpaHI;J1+@PS9kEB"><field name="NUM">1</field></shadow></value><next><block type="variables_set" id="CQ73Gnz$W$y)Jx,HVd#@"><field name="VAR" id="5tzhxx{5,;=7EbG`1b@f">left</field><value name="VALUE"><shadow type="math_number" id="eG@gFN)BHM0g|a@m%-]Y"><field name="NUM">-2</field></shadow></value><next><block type="variables_set" id="`p#02qPUIj?,w3TeV(IG"><field name="VAR" id="#wqK1Ynm%IdNII;F/hpw">right</field><value name="VALUE"><shadow type="math_number" id=")8%MC_E|y$|~Kt~_4@]u"><field name="NUM">2</field></shadow></value><next><block type="variables_set" id="B^zNQ)Jvg(##h^0)/%[H"><field name="VAR" id="aCIk(7OFc/ytDrHmzGc1">current_direction</field><value name="VALUE"><shadow type="math_number" id="|68iXTPg[qATnI$dW7E="><field name="NUM">0</field></shadow></value><next><block type="spritesetsetflag" id="1^z6q)H/cw!6RbE(rpAu"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get" id="`XY]+l10cb/Z{3uUrvDR"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="on"><shadow type="toggleOnOff" id="N;rUo#P#z9rRY3b?e1Mz"><field name="on">true</field></shadow></value><next><block type="function_call" id="dDUJ#ImYjZPo(L4:W.KO"><mutation name="RandomFood" functionid="Ek85c{zB/b-J.}H9nK-E"/></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id="W_*}XVT{b-P0zW2rKK8." x="1170" y="90"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="nxi?`DP-)Wci?T|HGy*5"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="ZR:Cux%w|j6ie;DF9`W;"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="nl_^%_s[.[.XaO+P0uP/"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="sBK7WuvMpsow}Oj(o(Xv"><field name="MEMBER">wall</field></shadow></value><statement name="HANDLER"><block type="gameOver" id="p!054U,_ndfy5|NLywu5"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose" id="0P%.{J%D9v#gcLkm~6ok"><field name="win">false</field></shadow></value></block></statement></block><block type="function_definition" id="hGJ+.z:kPtcB#4DO(uaU" x="490" y="270"><mutation name="set_direction" functionid="3aA`H[N!=m,-je8ogJ9("><arg name="direction" id="_zi`2LA%v}dLKucy{IGY" type="number"/></mutation><field name="function_name">set_direction</field><statement name="STACK"><block type="controls_if" id="g:1iB6G5!)ugJ]aiUMc;"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="6yhC{fqYINY=Z8cxJIV2"><field name="OP">NEQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="$PH@MN$iqyWY#MkZX|Nb"><field name="VAR" id="aCIk(7OFc/ytDrHmzGc1">current_direction</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="r@cG,*|CZ)0OyRx!P1x-"><field name="OP">MINUS</field><value name="A"><shadow type="math_number" id="DhIBp_{pKP[OnjApflC_"><field name="NUM">0</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="AgAfN^Ly,j#6L@s7,e=$"><field name="VALUE">direction</field></block></value></block></value></block></value><statement name="DO0"><block type="variables_set" id="3%(9ysb|@I{s+uWccv_t"><field name="VAR" id="aCIk(7OFc/ytDrHmzGc1">current_direction</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="8[N%RJ15`/jsOcR}6E_7"><field name="VALUE">direction</field></block></value><next><block type="controls_if" id="w#+-VhP/eQ:Zq6E]F`{@"><mutation elseif="2" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="xuZfaoR5J#z./le9yNts"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="4$c0BahPB,hwZBq?_n^J"><field name="VALUE">direction</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="@3N[x4TP@R#{8|XAU1H2"><field name="VAR" id="^D;J2@d=EV2XD[?Sn^2q">up</field></block></value></block></value><statement name="DO0"><block type="spritesetvel" id="UGUOme7QkRv4,}]]pJHg"><value name="sprite"><block type="variables_get" id="=gBtU`T{[:vrM-KG50|5"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="|!Cq66T[pz`ISby[a[SR"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow><block type="math_arithmetic" id="JJ3,^Q2QI$7O9c5ahgJC"><field name="OP">MINUS</field><value name="A"><shadow type="math_number" id="%-)S}g2VAgg*mRNAB!HR"><field name="NUM">0</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="h6f0wxA#ysbvMGIaZrgc"><field name="VAR" id="/+?%rae-y`b)0YbRG@U[">velocity</field></block></value></block></value><next><block type="spritesetimage" id="[P636f[ap5wyxgf=tlc3"><value name="sprite"><block type="variables_get" id="wKGofC?m#9_nntT4}fRh"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="5Rd@}}0r1Z85o#Of_sLa"><field name="img">img`
+. . . 2 2 . . . 
+. . 2 2 2 2 . . 
+. 2 2 2 2 1 2 . 
+2 2 2 1 2 1 2 2 
+2 2 2 2 2 2 2 2 
+. 2 2 2 2 2 2 . 
+. . 2 2 2 2 . . 
+. . . 2 2 . . . 
+`</field></block></value></block></next></block></statement><value name="IF1"><block type="logic_compare" id="T1#Ha!D?2Cc|@Qs.w*G?"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="E3`}5ld8;Qob95332Nr5"><field name="VALUE">direction</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="r[^EQR(5hc+}cfw:C)[}"><field name="VAR" id="ThC!6JUX7nzWu9~H_%?y">down</field></block></value></block></value><statement name="DO1"><block type="spritesetvel" id=":1`L_soqv^Scd^1.#7d%"><value name="sprite"><block type="variables_get" id="!D1f2wLSODWcU34|Ff.Y"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="v;:g^~dXBM]|zuU9;XND"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow><block type="variables_get" id="~q~@$W`baJ6TpQ(sU`)8"><field name="VAR" id="/+?%rae-y`b)0YbRG@U[">velocity</field></block></value><next><block type="spritesetimage" id="j8(%I,+OvD$EcuY$-lEU"><value name="sprite"><block type="variables_get" id="062,T(9w-Q[zy}Zj{zB?"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="^Y_sKDpA2Z?v_RTmFD$C"><field name="img">img`
+. . . 2 2 . . . 
+. . 2 2 2 2 . . 
+. 2 2 2 2 2 2 . 
+2 2 2 2 2 2 2 2 
+2 2 1 2 1 2 2 2 
+. 2 1 2 2 2 2 . 
+. . 2 2 2 2 . . 
+. . . 2 2 . . . 
+`</field></block></value></block></next></block></statement><value name="IF2"><block type="logic_compare" id="1g[ta/x^beF$pMuXj_F2"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="[LEkg}?i`}d6%~[W[+2{"><field name="VALUE">direction</field></block></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="`qZQu-hxA9D2Oi!CwYc."><field name="VAR" id="5tzhxx{5,;=7EbG`1b@f">left</field></block></value></block></value><statement name="DO2"><block type="spritesetvel" id="b;]uwsLM=is`k;j2bfxX"><value name="sprite"><block type="variables_get" id="lOD_Udwqj/CEkGbqTqe{"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow><block type="math_arithmetic" id="hgfhN.|[Y_%yirXeyp*t"><field name="OP">MINUS</field><value name="A"><shadow type="math_number" id="DfxhX+b]kN=:8|_z#ECG"><field name="NUM">0</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="+VGw5|056,Yz~dI!~:S?"><field name="VAR" id="/+?%rae-y`b)0YbRG@U[">velocity</field></block></value></block></value><value name="vy"><shadow type="spriteSpeedPicker" id="M?JpLX#i+tuPXMzRPKcn"><field name="speed">0</field></shadow></value><next><block type="spritesetimage" id="g$D8j.YGDf6qM*nKYw4S"><value name="sprite"><block type="variables_get" id="T6J@%|50D`AmaQMt;2%M"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="Cl4l}=T2`aL$0iWw:87c"><field name="img">img`
+. . . 2 2 . . . 
+. . 2 2 2 2 . . 
+. 2 1 1 2 2 2 . 
+2 2 2 2 2 2 2 2 
+2 2 2 1 2 2 2 2 
+. 2 2 2 2 2 2 . 
+. . 2 2 2 2 . . 
+. . . 2 2 . . . 
+`</field></block></value></block></next></block></statement><statement name="ELSE"><block type="spritesetvel" id="Sh?nFE,O4!#_hwh1N_8M"><value name="sprite"><block type="variables_get" id="=PfFoC6FS56yz-ZJJxos"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">0</field></shadow><block type="variables_get" id="eIEj+rXqU(g9YutI6U92"><field name="VAR" id="/+?%rae-y`b)0YbRG@U[">velocity</field></block></value><value name="vy"><shadow type="spriteSpeedPicker" id="Js(ZbogSlhusg:l*sbY="><field name="speed">0</field></shadow></value><next><block type="spritesetimage" id="pJhChnsDZPF[kr%H142v"><value name="sprite"><block type="variables_get" id="#L=Zw{Q_zF{HAd^Y0#br"><field name="VAR" id="$R+IZhywA=zKKl{:sREK">snake</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker" id="~@YR%(H9fv`?l`4bYV(U"><field name="img">img`
+. . . 2 2 . . . 
+. . 2 2 2 2 . . 
+. 2 2 2 2 2 2 . 
+2 2 2 2 1 2 2 2 
+2 2 2 2 2 2 2 2 
+. 2 2 2 1 1 2 . 
+. . 2 2 2 2 . . 
+. . . 2 2 . . . 
+`</field></block></value></block></next></block></statement></block></next></block></statement></block></statement></block><block type="keyonevent" id="{6}yIxo/dW|[x$`m^/$S" x="170" y="290"><field name="button">controller.up</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="function_call" id="=y?|moxd*^DpV{y7J*A8"><mutation name="set_direction" functionid="3aA`H[N!=m,-je8ogJ9("><arg name="direction" id="_zi`2LA%v}dLKucy{IGY" type="number"/></mutation><value name="_zi`2LA%v}dLKucy{IGY"><shadow type="math_number" id="x|Qp4P8_/lGvp{1joC0K"><field name="NUM">1</field></shadow><block type="variables_get" id="o?tEsBWB)Vsl*o]JL9vY"><field name="VAR" id="^D;J2@d=EV2XD[?Sn^2q">up</field></block></value></block></statement></block><block type="spritesoverlap" id="K9iwe:QrA2IG/XFlmjp9" x="1170" y="250"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="!42t5-)60K-#kaAB~Qvx"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="/y@RLPpUU:aP;HfojX4j"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="(v^%BSy/JBfrjT4*oAY_"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="OoUh#+wEBZ1KHcYwQ3Vj"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="spritedestroy" id="V+iG3*AVY~NY6{u+R:TO"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom" id="+wD7ec93!gHLakY}b~4x"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></block></value><next><block type="function_call" id="2%,zwC`%?x]TbYDPF%+$"><mutation name="RandomFood" functionid="Ek85c{zB/b-J.}H9nK-E"/></block></next></block></statement></block><block type="keyonevent" id="KhwdomiJMQl,w;^crTfG" x="167" y="434"><field name="button">controller.down</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="function_call" id="W)$#ICQPSYF+K=5m,dku"><mutation name="set_direction" functionid="3aA`H[N!=m,-je8ogJ9("><arg name="direction" id="_zi`2LA%v}dLKucy{IGY" type="number"/></mutation><value name="_zi`2LA%v}dLKucy{IGY"><shadow type="math_number" id="oF1}#cCdZl%4Jsk`{tfp"><field name="NUM">1</field></shadow><block type="variables_get" id="%v%Q;{iJYYzBu4?s7(#Z"><field name="VAR" id="ThC!6JUX7nzWu9~H_%?y">down</field></block></value></block></statement></block><block type="keyonevent" id="L4TF|oe!CL0@CLQLia?;" x="170" y="570"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="function_call" id="!D(ofHH3:H6ro^Pt4qS5"><mutation name="set_direction" functionid="3aA`H[N!=m,-je8ogJ9("><arg name="direction" id="_zi`2LA%v}dLKucy{IGY" type="number"/></mutation><value name="_zi`2LA%v}dLKucy{IGY"><shadow type="math_number" id="kDQu9Zz=t)x-Y!c8:sc5"><field name="NUM">1</field></shadow><block type="variables_get" id="/A4[=SH`SHHNnVS*feWk"><field name="VAR" id="5tzhxx{5,;=7EbG`1b@f">left</field></block></value></block></statement></block><block type="keyonevent" id="KBZC6*c[@w|Oq`Rw:iXA" x="170" y="710"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="function_call" id="$Z`IXfrXiXcX-O1r`v6$"><mutation name="set_direction" functionid="3aA`H[N!=m,-je8ogJ9("><arg name="direction" id="_zi`2LA%v}dLKucy{IGY" type="number"/></mutation><value name="_zi`2LA%v}dLKucy{IGY"><shadow type="math_number" id="E]B^o,kXCa_muq^@_L9N"><field name="NUM">1</field></shadow><block type="variables_get" id="dNmO]FNF${3Y8^5u40/*"><field name="VAR" id="#wqK1Ynm%IdNII;F/hpw">right</field></block></value></block></statement></block><block type="function_definition" id="J6d%mWzrUR=*8`F7#z:L" x="490" y="1210"><mutation name="RandomFood" functionid="Ek85c{zB/b-J.}H9nK-E"/><field name="function_name">RandomFood</field><statement name="STACK"><block type="variables_set" id="%id/T)1|*i1@}(Iue+7z"><field name="VAR" id="aUUtsY/`.C|^@V[i25HC">apple</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="_(MJGqNs-CZO3zAs0d$q"><value name="img"><shadow type="screen_image_picker" id="mS5lctF*ax_f5+H#ePF="><field name="img">img`
+. . . e e . . . 
+. . . e 7 . . . 
+. . 7 7 7 7 . . 
+. 7 7 7 7 7 7 . 
+. 7 7 7 7 7 7 . 
+. . 7 7 7 7 . . 
+. . . 7 7 . . . 
+. . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="`@0.4Cu$bdxov$sDy4)$"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="spritesetpos" id="]8_96ixiIi!k`.gq$ZPq"><value name="sprite"><block type="variables_get" id="C=T$(9y?9c9|w$D:/ujR"><field name="VAR" id="aUUtsY/`.C|^@V[i25HC">apple</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">160</field></shadow><block type="device_random" id="t$Z-Cl78_G.Rq0zX205R"><value name="min"><shadow type="math_number" id="!j`2oUKSLQQ!3?k@wD(N"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="C.xoY,2:dRt*7_E*N;J`"><field name="NUM">160</field></shadow></value></block></value><value name="y"><shadow type="positionPicker"><field name="index">120</field></shadow><block type="device_random" id="s$I}^OyGHOlh5S8x8bd;"><value name="min"><shadow type="math_number" id="64v9zHQtR}p*4VO`7vmI"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="*+TgmqC;|jSnFEF=F|s|"><field name="NUM">120</field></shadow></value></block></value></block></next></block></statement></block></xml>
